@@ -13,7 +13,7 @@
 
 ## What is TunnelX?
 TunnelX is a **decentralized bandwidth-sharing VPN network** built on the **Monad network**, enabling users to securely access the internet through distributed nodes while allowing node providers to earn by sharing their network capacity.  
-It replaces centralized VPN servers with community-operated nodes — ensuring privacy, transparency, and scalability.
+It replaces centralized VPN servers with community operated nodes, ensuring privacy, transparency, and scalability.
 
 ---
 
