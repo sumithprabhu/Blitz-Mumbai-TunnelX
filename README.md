@@ -1,13 +1,23 @@
 
-# 🌐 TunnelX
+<table align="center">
+<tr>
+<td align="center">
 
-## 🔍 What is TunnelX?
+#  TunnelX
+
+![TunnelX Cover](frontend/public/cover.png)
+
+</td>
+</tr>
+</table>
+
+##  What is TunnelX?
 TunnelX is a **decentralized bandwidth-sharing VPN network** built on the **Monad network**, enabling users to securely access the internet through distributed nodes while allowing node providers to earn by sharing their network capacity.  
 It replaces centralized VPN servers with community-operated nodes — ensuring privacy, transparency, and scalability.
 
 ---
 
-## ⚙️ Why on Monad?
+##  Why on Monad?
 Monad provides the **ideal infrastructure** for TunnelX due to its:
 - **High throughput and parallel execution**, essential for handling multiple concurrent VPN connections.
 - **Low gas fees**, allowing seamless microtransactions between users and node providers.
