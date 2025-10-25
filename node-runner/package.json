@@ -1,0 +1,21 @@
+{
+    "name": "vpn-node-runner",
+    "version": "0.1.0",
+    "description": "Provider-side agent to run VPN, track usage, and report to backend.",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "setup": "bash ./scripts/setup.sh"
+    },
+    "dependencies": {
+        "axios": "^1.7.7",
+        "dotenv": "^16.4.5",
+        "express": "^5.1.0",
+        "node-fetch": "^3.3.2"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "license": "MIT"
+}
