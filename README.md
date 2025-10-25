@@ -3,7 +3,7 @@
 <tr>
 <td align="center">
 
-#  TunnelX
+# TunnelX
 
 ![TunnelX Cover](frontend/public/cover.png)
 
@@ -11,13 +11,13 @@
 </tr>
 </table>
 
-##  What is TunnelX?
+## What is TunnelX?
 TunnelX is a **decentralized bandwidth-sharing VPN network** built on the **Monad network**, enabling users to securely access the internet through distributed nodes while allowing node providers to earn by sharing their network capacity.  
 It replaces centralized VPN servers with community-operated nodes — ensuring privacy, transparency, and scalability.
 
 ---
 
-##  Why on Monad?
+## Why on Monad?
 Monad provides the **ideal infrastructure** for TunnelX due to its:
 - **High throughput and parallel execution**, essential for handling multiple concurrent VPN connections.
 - **Low gas fees**, allowing seamless microtransactions between users and node providers.
@@ -76,7 +76,7 @@ Smart Contract Updates State → Provider Paid Automatically
 
 ---
 
-## 🧩 Future Scope & DAO Mechanism
+## Future Scope & DAO Mechanism
 
 - **DAO Governance:** Community-based decision-making for network rules, parameters, and upgrades.
 - **Slashing Mechanism:** Nodes that fail uptime, leak data, or cheat on accounting will have their stake slashed.
@@ -84,7 +84,7 @@ Smart Contract Updates State → Provider Paid Automatically
 
 ---
 
-## 💎 Benefits
+## Benefits
 
 ### 1️⃣ Decentralized & Distributed
 Removes the dependency on centralized VPN providers — users connect directly through community nodes.
