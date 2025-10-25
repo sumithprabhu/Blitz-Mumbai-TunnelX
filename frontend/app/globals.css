@@ -39,16 +39,16 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* VPN Mon dark theme colors */
-  --vpn-bg-primary: #000000;
-  --vpn-accent-1: #7a1cac;
-  --vpn-accent-2: #ad49e1;
-  --vpn-light-accent: #ebd3f8;
-  --vpn-white: #ffffff;
+  /* TunnelX dark theme colors */
+  --tunnelx-bg-primary: #000000;
+  --tunnelx-accent-1: #7a1cac;
+  --tunnelx-accent-2: #ad49e1;
+  --tunnelx-light-accent: #ebd3f8;
+  --tunnelx-white: #ffffff;
 }
 
 .dark {
-  /* Override with VPN Mon dark theme */
+  /* Override with TunnelX dark theme */
   --background: #0a0a0a;
   --foreground: #ffffff;
   --card: #1a1a1a;
@@ -133,7 +133,7 @@
   }
 }
 
-/* VPN Mon custom styles */
+/* TunnelX custom styles */
 .glow-violet {
   box-shadow: 0 0 20px rgba(173, 73, 225, 0.5);
 }

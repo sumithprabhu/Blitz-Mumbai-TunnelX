@@ -27,57 +27,7 @@ const NETWORK_NODES: NetworkNode[] = [
     uptime: 97,
     lat: 20.5937,
     lng: 78.9629,
-  },
-  {
-    id: "node_002",
-    region: "Singapore",
-    country: "SG",
-    status: "active",
-    price: 0.012,
-    uptime: 99,
-    lat: 1.3521,
-    lng: 103.8198,
-  },
-  {
-    id: "node_003",
-    region: "Germany",
-    country: "DE",
-    status: "active",
-    price: 0.015,
-    uptime: 98,
-    lat: 51.1657,
-    lng: 10.4515,
-  },
-  {
-    id: "node_004",
-    region: "US East",
-    country: "US",
-    status: "active",
-    price: 0.011,
-    uptime: 96,
-    lat: 37.0902,
-    lng: -95.7129,
-  },
-  {
-    id: "node_005",
-    region: "Japan",
-    country: "JP",
-    status: "offline",
-    price: 0.013,
-    uptime: 94,
-    lat: 36.2048,
-    lng: 138.2529,
-  },
-  {
-    id: "node_006",
-    region: "Brazil",
-    country: "BR",
-    status: "active",
-    price: 0.009,
-    uptime: 95,
-    lat: -14.235,
-    lng: -51.9253,
-  },
+  }
 ]
 
 export default function StatusPage() {
@@ -102,7 +52,7 @@ export default function StatusPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-2">Network Status</h1>
-          <p className="text-foreground/60">Monitor the global VPN node network in real-time</p>
+          <p className="text-foreground/60">Monitor the global TunnelX node network in real-time</p>
         </div>
 
         {/* Stats Overview */}

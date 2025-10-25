@@ -74,75 +74,10 @@ export default function ConnectPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8 flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-bold mb-2">Connect to VPN</h1>
-            <p className="text-foreground/60">Select a node and connect to start using the VPN</p>
+            <h1 className="text-4xl font-bold mb-2">Connect to TunnelX</h1>
+            <p className="text-foreground/60">Select a node and connect to start using TunnelX</p>
           </div>
-          <div className="relative">
-            <button
-              onClick={() => setShowWalletModal(!showWalletModal)}
-              className="px-4 py-2 rounded-lg bg-card border border-border text-foreground hover:border-secondary transition-colors"
-            >
-              💰 {balance.toFixed(2)} MON
-            </button>
-
-            {showWalletModal && (
-              <div className="absolute right-0 top-full mt-2 w-64 bg-card border border-border rounded-lg shadow-lg z-50">
-                <div className="p-4 border-b border-border flex items-center justify-between">
-                  <h3 className="font-semibold">Wallet</h3>
-                  <button onClick={() => setShowWalletModal(false)}>
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-
-                <div className="p-4 space-y-3">
-                  <div className="text-center mb-4">
-                    <p className="text-sm text-foreground/60">Balance</p>
-                    <p className="text-2xl font-bold text-secondary">{balance.toFixed(2)} MON</p>
-                  </div>
-
-                  {!walletAction ? (
-                    <div className="space-y-2">
-                      <Button
-                        onClick={() => setWalletAction("deposit")}
-                        className="w-full bg-secondary text-secondary-foreground"
-                      >
-                        Deposit
-                      </Button>
-                      <Button onClick={() => setWalletAction("withdraw")} variant="outline" className="w-full">
-                        Withdraw
-                      </Button>
-                    </div>
-                  ) : (
-                    <div className="space-y-3">
-                      <p className="text-sm font-medium capitalize">{walletAction}</p>
-                      <input
-                        type="number"
-                        placeholder="Enter amount"
-                        value={walletAmount}
-                        onChange={(e) => setWalletAmount(e.target.value)}
-                        className="w-full px-3 py-2 rounded-lg bg-background border border-border text-foreground focus:border-secondary focus:outline-none"
-                      />
-                      <div className="flex gap-2">
-                        <Button onClick={handleWalletAction} className="flex-1 bg-secondary text-secondary-foreground">
-                          Confirm
-                        </Button>
-                        <Button
-                          onClick={() => {
-                            setWalletAction(null)
-                            setWalletAmount("")
-                          }}
-                          variant="outline"
-                          className="flex-1"
-                        >
-                          Cancel
-                        </Button>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-          </div>
+         
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

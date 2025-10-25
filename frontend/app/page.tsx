@@ -2,8 +2,10 @@
 
 import { Navbar } from "@/components/navbar"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Globe, Zap } from "lucide-react"
+import { ArrowRight, Zap } from "lucide-react"
 import Link from "next/link"
+import Lottie from "lottie-react"
+import networkGlobeAnimation from "@/public/network-globe.json"
 
 export default function Home() {
   return (
@@ -54,11 +56,11 @@ export default function Home() {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 pt-8">
                 <div className="space-y-1">
-                  <p className="text-2xl font-bold text-secondary">231</p>
+                  <p className="text-2xl font-bold text-secondary">1</p>
                   <p className="text-sm text-foreground/60">Live Nodes Active</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-2xl font-bold text-secondary">5.2 TB</p>
+                  <p className="text-2xl font-bold text-secondary">0 MB</p>
                   <p className="text-sm text-foreground/60">Bandwidth Shared</p>
                 </div>
               </div>
@@ -68,33 +70,12 @@ export default function Home() {
             <div className="relative h-96 md:h-full min-h-96 flex items-center justify-center">
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 blur-3xl" />
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="relative w-64 h-64">
-                  {/* Animated globe representation */}
-                  <div
-                    className="absolute inset-0 rounded-full border-2 border-secondary/30 animate-spin"
-                    style={{ animationDuration: "20s" }}
-                  />
-                  <div
-                    className="absolute inset-4 rounded-full border border-secondary/20 animate-spin"
-                    style={{ animationDuration: "30s", animationDirection: "reverse" }}
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Globe className="w-32 h-32 text-secondary/60" />
-                  </div>
-
-                  {/* Pulsing nodes */}
-                  <div className="absolute top-8 left-8 w-3 h-3 rounded-full bg-secondary animate-pulse" />
-                  <div
-                    className="absolute top-16 right-12 w-2 h-2 rounded-full bg-secondary/70 animate-pulse"
-                    style={{ animationDelay: "0.3s" }}
-                  />
-                  <div
-                    className="absolute bottom-12 left-12 w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"
-                    style={{ animationDelay: "0.6s" }}
-                  />
-                  <div
-                    className="absolute bottom-8 right-8 w-2 h-2 rounded-full bg-secondary/70 animate-pulse"
-                    style={{ animationDelay: "0.9s" }}
+                <div className="relative w-[516px] h-[516px]">
+                  <Lottie
+                    animationData={networkGlobeAnimation}
+                    loop={true}
+                    autoplay={true}
+                    className="w-[516px] h-[516px] opacity-40"
                   />
                 </div>
               </div>
@@ -139,12 +120,12 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="p-4 rounded-lg bg-card border border-border/50 neon-border">
                   <p className="text-sm text-foreground/60">
-                    <span className="font-semibold text-secondary">Live Nodes Active:</span> 231
+                    <span className="font-semibold text-secondary">Live Nodes Active:</span> 1
                   </p>
                 </div>
                 <div className="p-4 rounded-lg bg-card border border-border/50 neon-border">
                   <p className="text-sm text-foreground/60">
-                    <span className="font-semibold text-secondary">Total Bandwidth Shared:</span> 5.2 TB
+                    <span className="font-semibold text-secondary">Total Bandwidth Shared:</span> 0 MB
                   </p>
                 </div>
               </div>
@@ -166,18 +147,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-sm text-foreground/60">Powered by Monad ⚡</div>
             <div className="flex items-center gap-6">
-              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                About
-              </a>
-              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                Docs
-              </a>
+              
               <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
                 GitHub
               </a>
-              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                Contact
-              </a>
+              
             </div>
           </div>
         </div>
